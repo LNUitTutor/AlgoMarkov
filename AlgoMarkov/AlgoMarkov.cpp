@@ -66,4 +66,22 @@ int main()
     Q = Mark.run(P);
     std::cout << " Q = " << Q << '\n';
     system("pause");
+
+    fin.open("BubbleSort.txt");
+    Mark.loadRules(fin);
+    fin.close();
+    std::cout << Mark << '\n';
+    system("pause");
+
+    P = "221333211";
+    std::cout << "\n P = " << P << '\n';
+    Q = Mark.run(P);
+    std::cout << " Q = " << Q << '\n';
+    system("pause");
+
+    P = "824391576";
+    std::cout << "\n P = " << P << '\n';
+    Q = Mark.run(P);
+    std::cout << " Q = " << Q << '\n';
+    system("pause");
 }
