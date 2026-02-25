@@ -1,87 +1,44 @@
 ﻿#include <iostream>
 #include <fstream>
+//#include <string>
 #include "Substitution.h"
 #include "Interpreter.h"
 
 int main()
 {
+    const int kRules = 4;
+    const int kWords = 3;
+    string fileNames[kRules] = { "BubbleSort.txt", "Euclid.txt", "Increment.txt", "UnaryToDecimal.txt" };
+    string words[kRules][kWords] = {
+        { "2_2_1_3_3_3_2_1_1", "8_2_4_3_9_1_5_7_6", "2_4_6_8" },  // bubble
+        { "111111111-111", "11111111111111-111111111111111111111", "11111-11111" }, // Euclid
+        { "1998", "1999", "2000" }, // increment
+        { "|||||||||||||||||||||||||||||||||||", "||||||||||||||-|||||||||||||||||||||",
+          string(125, '|') } // unary2decimal
+    };
     Interpreter Mark;
-    std::ifstream fin("Euclid.txt");
-    Mark.loadRules(fin);
-    fin.close();
-    std::cout << Mark << '\n';
-
-    string P("1111-111111");
-    std::cout << " P = " << P << '\n';
-    string Q = Mark.run(P);
-    std::cout << " Q = " << Q << '\n';
-    system("pause");
-    
-    P = "111111111-111";
-    std::cout << "\n P = " << P << '\n';
-    Q = Mark.run(P);
-    std::cout << " Q = " << Q << '\n';
-    system("pause");
-
-    P = "11111111111111-111111111111111111111";
-    std::cout << "\n P = " << P << '\n';
-    Q = Mark.run(P);
-    std::cout << " Q = " << Q << '\n';
-    system("pause");
-
-    fin.open("Increment.txt");
-    Mark.loadRules(fin);
-    fin.close();
-    std::cout << Mark << '\n';
-    system("pause");
-
-    P = "1998";
-    std::cout << "\n P = " << P << '\n';
-    for (int i = 0; i < 5; ++i)
+    std::ifstream fin;
+    int answer;
+    while (true)
     {
-        P = Mark.run(P);
-        std::cout << " Q = " << P << '\n';
+        std::cout << "\nSelect an algorithm from:\n\n";
+        for (int i = 0; i < kRules; ++i) std::cout << i << " - " << fileNames[i] << '\n';
+        std::cout << kRules << " - to exit\n>> ";
+        std::cin >> answer;
+        if (answer < 0 || answer >= kRules) break;
+        fin.open(fileNames[answer]);
+        Mark.loadRules(fin);
+        fin.close();
+        std::cout << Mark << '\n';
         system("pause");
+        for (int i = 0; i < kWords; ++i)
+        {
+            string P = words[answer][i];
+            std::cout << " P = " << P << '\n';
+            string Q = Mark.run(P);
+            std::cout << " Q = " << Q << '\n';
+            system("pause");
+        }
     }
-
-    fin.open("UnaryToDecimal.txt");
-    Mark.loadRules(fin);
-    fin.close();
-    std::cout << Mark << '\n';
-    system("pause");
-
-    P = "|||||||||||||||||||||||||||||||||||";
-    std::cout << "\n P = " << P << '\n';
-    Q = Mark.run(P);
-    std::cout << " Q = " << Q << '\n';
-    system("pause");
-
-    P = "||||||||||||||-|||||||||||||||||||||";
-    std::cout << "\n P = " << P << '\n';
-    Q = Mark.run(P);
-    std::cout << " Q = " << Q << '\n';
-    system("pause");
-    P = string(125, '|');
-    std::cout << "\n P = " << P << '\n';
-    Q = Mark.run(P);
-    std::cout << " Q = " << Q << '\n';
-    system("pause");
-
-    fin.open("BubbleSort.txt");
-    Mark.loadRules(fin);
-    fin.close();
-    std::cout << Mark << '\n';
-    system("pause");
-
-    P = "2_2_1_3_3_3_2_1_1";
-    std::cout << "\n P = " << P << '\n';
-    Q = Mark.run(P);
-    std::cout << " Q = " << Q << '\n';
-    system("pause");
-
-    P = "8_2_4_3_9_1_5_7_6";
-    std::cout << "\n P = " << P << '\n';
-    Q = Mark.run(P);
-    std::cout << " Q = " << Q << '\n';
-    system("pause");
+    std::cout << "\n *** Bye! ***\n\n";
 }
