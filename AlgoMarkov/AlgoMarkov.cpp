@@ -39,6 +39,16 @@ int main()
             std::cout << " Q = " << Q << '\n';
             system("pause");
         }
+        string word;
+        std::cout << "\nInput a nonempty string if you want to run: ";
+        std::cin.get();  getline(std::cin, word);
+        if (word != "")
+        {
+            std::cout << " P = " << word << '\n';
+            string Q = Mark.run(word);
+            std::cout << " Q = " << Q << '\n';
+            system("pause");
+        }
     }
     std::cout << "\n *** Bye! ***\n\n";
 }
