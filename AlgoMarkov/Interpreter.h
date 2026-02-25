@@ -7,6 +7,8 @@ private:
 	Substitution** rules;
 	int count_rules;
 	void clear();
+	Interpreter(const Interpreter&);
+	Interpreter& operator=(const Interpreter&);
 public:
 	Interpreter() :rules(nullptr), count_rules(0) {}
 	~Interpreter();

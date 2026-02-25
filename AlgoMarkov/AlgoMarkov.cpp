@@ -16,7 +16,7 @@ int main()
     string Q = Mark.run(P);
     std::cout << " Q = " << Q << '\n';
     system("pause");
-    /*
+    
     P = "111111111-111";
     std::cout << "\n P = " << P << '\n';
     Q = Mark.run(P);
@@ -43,7 +43,7 @@ int main()
         std::cout << " Q = " << P << '\n';
         system("pause");
     }
-*/
+
     fin.open("UnaryToDecimal.txt");
     Mark.loadRules(fin);
     fin.close();
@@ -73,13 +73,13 @@ int main()
     std::cout << Mark << '\n';
     system("pause");
 
-    P = "221333211";
+    P = "2_2_1_3_3_3_2_1_1";
     std::cout << "\n P = " << P << '\n';
     Q = Mark.run(P);
     std::cout << " Q = " << Q << '\n';
     system("pause");
 
-    P = "824391576";
+    P = "8_2_4_3_9_1_5_7_6";
     std::cout << "\n P = " << P << '\n';
     Q = Mark.run(P);
     std::cout << " Q = " << Q << '\n';
