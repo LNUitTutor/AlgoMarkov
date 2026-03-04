@@ -35,14 +35,5 @@
     <Text Include="Decrement.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="DecimalToUnary.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="DecToUn.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="RemLeadZero.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
   </ItemGroup>
 </Project>

@@ -143,12 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="BubbleSort.txt" />
-    <Text Include="DecimalToUnary.txt" />
     <Text Include="Decrement.txt" />
-    <Text Include="DecToUn.txt" />
     <Text Include="Euclid.txt" />
     <Text Include="Increment.txt" />
-    <Text Include="RemLeadZero.txt" />
     <Text Include="UnaryToDecimal.txt" />
   </ItemGroup>
   <ItemGroup>
