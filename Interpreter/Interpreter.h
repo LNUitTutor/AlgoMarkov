@@ -11,6 +11,7 @@ private:
 	Interpreter& operator=(const Interpreter&);
 public:
 	Interpreter() :rules(nullptr), count_rules(0) {}
+	explicit Interpreter(const char* fileName);
 	~Interpreter();
 	void loadRules(std::istream& stin);
 	string run(string P);

@@ -1,9 +1,17 @@
 #include "Interpreter.h"
+#include <fstream>
 
 void Interpreter::clear()
 {
 	for (int i = 0; i < count_rules; ++i) delete rules[i];
 	delete[] rules;
+}
+
+Interpreter::Interpreter(const char* fileName)
+{
+    std::ifstream stin(fileName);
+    this->loadRules(stin);
+    stin.close();
 }
 
 Interpreter::~Interpreter()
