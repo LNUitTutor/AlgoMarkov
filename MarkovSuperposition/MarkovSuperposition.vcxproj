@@ -150,7 +150,10 @@
     <Text Include="DecimalToUnary.txt" />
     <Text Include="Decrement.txt" />
     <Text Include="DecToUn.txt" />
+    <Text Include="Minus.txt" />
+    <Text Include="Plus.txt" />
     <Text Include="RemLeadZero.txt" />
+    <Text Include="UnaryToDecimal.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
