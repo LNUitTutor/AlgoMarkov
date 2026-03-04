@@ -6,13 +6,14 @@
 
 int main()
 {
-    const int kRules = 4;
+    const int kRules = 5;
     const int kWords = 3;
-    string fileNames[kRules] = { "BubbleSort.txt", "Euclid.txt", "Increment.txt", "UnaryToDecimal.txt" };
+    string fileNames[kRules] = { "BubbleSort.txt", "Euclid.txt", "Increment.txt", "Decrement.txt", "UnaryToDecimal.txt" };
     string words[kRules][kWords] = {
         { "2_2_1_3_3_3_2_1_1", "8_2_4_3_9_1_5_7_6", "2_4_6_8" },  // bubble
         { "111111111-111", "11111111111111-111111111111111111111", "11111-11111" }, // Euclid
         { "1998", "1999", "2000" }, // increment
+        { "1090", "1991", "2000" }, // decrement
         { "|||||||||||||||||||||||||||||||||||", "||||||||||||||-|||||||||||||||||||||",
           string(125, '|') } // unary2decimal
     };
