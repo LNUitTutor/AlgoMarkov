@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4cba01a4-0d81-48ea-b6ea-7165a95a539b}</ProjectGuid>
-    <RootNamespace>AlgoMarkov</RootNamespace>
+    <ProjectGuid>{441b251d-826e-474b-ae3c-b57eda0a24f9}</ProjectGuid>
+    <RootNamespace>MarkovSuperposition</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,22 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AlgoMarkov.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="BubbleSort.txt" />
-    <Text Include="DecimalToUnary.txt" />
-    <Text Include="Decrement.txt" />
-    <Text Include="DecToUn.txt" />
-    <Text Include="Euclid.txt" />
-    <Text Include="Increment.txt" />
-    <Text Include="RemLeadZero.txt" />
-    <Text Include="UnaryToDecimal.txt" />
+    <ClCompile Include="MarkovSuperposition.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Interpreter\Interpreter.vcxproj">
       <Project>{64557153-3447-4687-b345-9aea58628174}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DecimalToUnary.txt" />
+    <Text Include="Decrement.txt" />
+    <Text Include="DecToUn.txt" />
+    <Text Include="RemLeadZero.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

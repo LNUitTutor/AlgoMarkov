@@ -15,34 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AlgoMarkov.cpp">
+    <ClCompile Include="Interpreter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Substitution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Euclid.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="Increment.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="UnaryToDecimal.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="BubbleSort.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="Decrement.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="DecimalToUnary.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="DecToUn.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="RemLeadZero.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
+    <ClInclude Include="Interpreter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Substitution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

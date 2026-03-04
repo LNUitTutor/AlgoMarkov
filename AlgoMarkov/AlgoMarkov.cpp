@@ -1,8 +1,6 @@
 ﻿#include <iostream>
 #include <fstream>
-//#include <string>
-#include "Substitution.h"
-#include "Interpreter.h"
+#include "..\Interpreter\Interpreter.h"
 
 int main()
 {

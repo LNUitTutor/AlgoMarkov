@@ -15,27 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AlgoMarkov.cpp">
+    <ClCompile Include="MarkovSuperposition.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Euclid.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="Increment.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="UnaryToDecimal.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="BubbleSort.txt">
+    <Text Include="DecimalToUnary.txt">
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="Decrement.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="DecimalToUnary.txt">
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="DecToUn.txt">
